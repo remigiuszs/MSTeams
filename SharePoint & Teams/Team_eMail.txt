@@ -1,0 +1,16 @@
+### Gruppen-eMail ändern
+
+Set-UnifiedGroup –Identity <GroupName> –PrimarySmtpAddress <newemail@onmicrosoft.com>
+
+### Eine Gruppe unsichtbar
+
+Get-UnifiedGroup "Gruppe" | Set-UnifiedGroup -HiddenFromAddressListsEnabled $true
+
+### Alle Gruppen unsichtbar
+
+Get-UnifiedGroup | Set-UnifiedGroup -HiddenFromAddressListsEnabled $true
+
+### Ressourcen unsichtbar
+
+Get-Mailbox | Where {$_.ResourceType -eq "Equipment"} | Set-Mailbox -HiddenFromAddressListsEnabled $true
+

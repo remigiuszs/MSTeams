@@ -1,0 +1,14 @@
+Office365 Enterprise > Teams -- VOLL-Lizenz > Owner (Exchange) ; Member (EX, Teams)
+				I--> GUESTs : 1 Member = 4 Guest EXTERNAL (FREE)
+				I--> VISITOR : Azure > Gast-Einladende (ADMIN) ; TEAM.ex
+				I--> Tagesfliege : Contingent 300 FREE-Lizenzen (TRIALs) 
+------------------------------------------------------------------------ CAL >> semi-unendlich TEAMS 
+Azure > GUEST > ACTIVE (external) USER + Voll-Lizenz == MEMBER EXTERNAL (in. ALIAS) 
+					 - Voll-Lizenz + eigene Lizenz == MEMBER (Guest)
+--> TEAMS ADMIN :: Gast <> Voll-Mitglied
+--> TEAM :: und hier gilt ZUSÄTZLICH ...
+--> SharePoint,... :: bitte nicht ... 
+-------------------------------------------------------------------------------   GUEST AUTH
+Google > keine LiveID > Office365-Lizenz > braucht eine Lizenz > 300
+LiveID / Hotmail > CORP-Lizenz @ PRIVATE > kostenloses TEAM / eingeladen 4 @ 1
+Office365 + TEAMs > Gast-Rechte für UNSERES Office365 aus SEINEM Office365

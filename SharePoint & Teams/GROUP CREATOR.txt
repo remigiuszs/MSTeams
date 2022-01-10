@@ -1,0 +1,20 @@
+let StartDate = ago(7d);
+let OperationNameMatch = "Add group";
+let O365GroupNameFilter = "<nameOfGroup>";
+AuditLogs
+| where TimeGenerated > StartDate
+| where OperationName contains OperationNameMatch
+| where TargetResources has "Unified"
+| where TargetResources has O365GroupNameFilter
+| project InitiatedBy, TargetResources
+| mvexpand InitiatedBy, TargetResources
+| evaluate bag_unpack(InitiatedBy)
+| evaluate bag_unpack(user)
+| project-rename creationSourcedisplayName = displayName, userId = id
+| evaluate bag_unpack(TargetResources)
+| project-rename groupId = id, groupDisplayName = displayName
+
+
+
+(R)  BrianTJackett Update O365 Group creation with source info 
+(C)  https://github.com/BrianTJackett/log-analytics-samples/blob/master/Queries/Office365GroupCreationInitiatedBy.kql
